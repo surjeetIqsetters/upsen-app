@@ -1,0 +1,35 @@
+{
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    "strict": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"],
+      "@app/*": ["src/app/*"],
+      "@assets/*": ["src/assets/*"],
+      "@components/*": ["src/app/components/*"],
+      "@screens/*": ["src/app/screens/*"],
+      "@navigation/*": ["src/app/navigation/*"],
+      "@store/*": ["src/app/store/*"],
+      "@services/*": ["src/app/services/*"],
+      "@hooks/*": ["src/app/hooks/*"],
+      "@utils/*": ["src/app/utils/*"],
+      "@types/*": ["src/app/types/*"]
+    },
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true
+  },
+  "include": [
+    "src/**/*",
+    "App.tsx"
+  ],
+  "exclude": [
+    "node_modules",
+    "android",
+    "ios"
+  ]
+}
